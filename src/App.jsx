@@ -345,7 +345,40 @@ function App() {
             </div>
 
           </article>
+{/* Project 04 */}
+<article className="project-card">
 
+  <div className="project-number">
+    04
+  </div>
+
+  <h3>
+    Alawlama Training Center Management System
+  </h3>
+
+  <p>
+    A web-based management system designed to organize training center
+    operations, with structured modules for managing data and system
+    administration.
+  </p>
+
+  <div className="project-tech">
+    PHP · MySQL · HTML · CSS · JavaScript
+  </div>
+
+  <div className="project-links">
+
+    <a
+      href="https://github.com/Agadouf/alawlama-training-center-management-system"
+      target="_blank"
+      rel="noreferrer"
+    >
+      GitHub ↗
+    </a>
+
+  </div>
+
+</article>
         </div>
 
       </section>
