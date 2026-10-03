@@ -375,7 +375,13 @@ function App() {
     >
       GitHub ↗
     </a>
-
+ <a
+      href="https://alawlama.ifree.page/login.php"
+      target="_blank"
+      rel="noreferrer"
+    >
+      Live Demo ↗
+    </a>
   </div>
 
 </article>
