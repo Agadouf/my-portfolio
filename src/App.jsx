@@ -314,37 +314,42 @@ function App() {
 
 
           {/* =====================
-              Project 03
-          ====================== */}
-          <article className="project-card">
+          {/* =====================
+    Project 03
+====================== */}
+<article className="project-card">
 
-            <div className="project-number">
-              03
-            </div>
+  <div className="project-number">
+    03
+  </div>
 
-            <h3>
-              Agadouf Shop
-            </h3>
+  <h3>
+    Agadouf Shop
+  </h3>
 
-            <p>
-              An e-commerce web application featuring product browsing,
-              authentication, shopping cart functionality, product
-              management, and an administration interface.
-            </p>
+  <p>
+    An e-commerce web application featuring product browsing,
+    authentication, shopping cart functionality, product management,
+    and an administration interface.
+  </p>
 
-            <div className="project-tech">
-              HTML · CSS · JavaScript · PHP · MySQL
-            </div>
+  <div className="project-tech">
+    HTML · CSS · JavaScript · PHP · MySQL
+  </div>
 
-            <div className="project-links">
+  <div className="project-links">
 
-              <span className="project-status">
-                Project
-              </span>
+    <a
+      href="https://iphone-shop.infinityfreeapp.com"
+      target="_blank"
+      rel="noreferrer"
+    >
+      Live Demo ↗
+    </a>
 
-            </div>
+  </div>
 
-          </article>
+</article>
 {/* Project 04 */}
 <article className="project-card">
 
