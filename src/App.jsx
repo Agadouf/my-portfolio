@@ -344,17 +344,25 @@ function App() {
     HTML · CSS · JavaScript · PHP · MySQL
   </div>
 
-  <div className="project-links">
+ <div className="project-links">
 
-    <a
-      href="https://iphone-shop.infinityfreeapp.com"
-      target="_blank"
-      rel="noreferrer"
-    >
-      Live Demo ↗
-    </a>
+  <a
+    href="https://github.com/Agadouf/Agadouf-Shop"
+    target="_blank"
+    rel="noreferrer"
+  >
+    GitHub ↗
+  </a>
 
-  </div>
+  <a
+    href="https://iphone-shop.infinityfreeapp.com"
+    target="_blank"
+    rel="noreferrer"
+  >
+    Live Demo ↗
+  </a>
+
+</div>
 
 </article>
 {/* Project 04 */}
