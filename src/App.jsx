@@ -300,16 +300,23 @@ function App() {
 
             <div className="project-links">
 
-              <a
-                href="https://github.com/Agadouf/quran_app"
-                target="_blank"
-                rel="noreferrer"
-              >
-                GitHub ↗
-              </a>
+  <a
+    href="https://github.com/Agadouf/quran_app"
+    target="_blank"
+    rel="noreferrer"
+  >
+    GitHub ↗
+  </a>
 
-            </div>
+  <a
+    href="https://quran-app-alzain.vercel.app/"
+    target="_blank"
+    rel="noreferrer"
+  >
+    Live Demo ↗
+  </a>
 
+</div>
           </article>
 
 
