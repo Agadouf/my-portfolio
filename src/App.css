@@ -641,3 +641,55 @@ footer {
   }
 }
 
+/* =========================
+   Mobile Responsive Fix
+========================= */
+
+@media (max-width: 768px) {
+
+  .education-card {
+    display: block;
+    padding: 28px 24px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .education-year {
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+  }
+
+  .education-info {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .education-info h3 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+
+  .education-info h4 {
+    font-size: 1.15rem;
+    line-height: 1.4;
+  }
+
+  .education-info p {
+    font-size: 1rem;
+    line-height: 1.7;
+    overflow-wrap: break-word;
+  }
+
+}html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
