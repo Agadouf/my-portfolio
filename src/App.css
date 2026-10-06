@@ -1806,4 +1806,312 @@ footer {
 
     line-height: 1.9 !important;
   }
-     }
+     }/* =========================================
+   FINAL MOBILE HERO FIX
+========================================= */
+
+@media screen and (max-width: 600px) {
+
+  html,
+  body {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  .portfolio {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  /* ==============================
+     HERO FORCE ONE COLUMN
+  ============================== */
+
+  .hero {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    align-items: center !important;
+    justify-content: flex-start !important;
+
+    gap: 20px !important;
+
+    padding: 30px 20px 70px !important;
+
+    text-align: center !important;
+  }
+
+  /* ==============================
+     PROFILE
+  ============================== */
+
+  .hero-visual {
+    order: 1 !important;
+
+    width: 100% !important;
+    min-width: 0 !important;
+
+    height: 250px !important;
+    min-height: 250px !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    margin: 0 !important;
+  }
+
+  .profile-circle {
+    width: 205px !important;
+    height: 205px !important;
+
+    flex-shrink: 0 !important;
+
+    padding: 6px !important;
+  }
+
+  .profile-placeholder {
+    width: 100% !important;
+    height: 100% !important;
+
+    border-width: 3px !important;
+  }
+
+  .profile-placeholder img {
+    width: 100% !important;
+    height: 100% !important;
+
+    object-fit: cover !important;
+    object-position: center 25% !important;
+  }
+
+  /* ==============================
+     HERO CONTENT
+  ============================== */
+
+  .hero-content {
+    order: 2 !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    min-width: 0 !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    align-items: center !important;
+
+    text-align: center !important;
+  }
+
+  .hero-greeting {
+    width: 100% !important;
+
+    margin-bottom: 10px !important;
+
+    font-size: 1rem !important;
+
+    text-align: center !important;
+  }
+
+  .hero h1 {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    margin: 0 0 18px !important;
+
+    font-size: 3.1rem !important;
+
+    line-height: 1.05 !important;
+
+    letter-spacing: -1.5px !important;
+
+    text-align: center !important;
+
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+
+  .hero h1 span {
+    display: block !important;
+
+    width: 100% !important;
+
+    white-space: nowrap !important;
+  }
+
+  .hero h2 {
+    width: 100% !important;
+    max-width: 500px !important;
+
+    margin: 0 auto 15px !important;
+
+    font-size: 1.1rem !important;
+
+    line-height: 1.65 !important;
+
+    text-align: center !important;
+
+    overflow-wrap: normal !important;
+  }
+
+  .hero-description {
+    width: 100% !important;
+    max-width: 500px !important;
+
+    margin: 0 auto !important;
+
+    font-size: 0.96rem !important;
+
+    line-height: 1.85 !important;
+
+    text-align: center !important;
+
+    overflow-wrap: normal !important;
+  }
+
+  /* ==============================
+     BUTTONS
+  ============================== */
+
+  .hero-buttons {
+    width: 100% !important;
+
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    align-items: stretch !important;
+
+    gap: 12px !important;
+
+    margin-top: 25px !important;
+  }
+
+  .hero-buttons .btn {
+    width: 100% !important;
+  }
+
+  /* ==============================
+     SOCIAL
+  ============================== */
+
+  .social-links {
+    width: 100% !important;
+
+    display: flex !important;
+
+    justify-content: center !important;
+
+    align-items: center !important;
+
+    flex-wrap: wrap !important;
+
+    gap: 18px !important;
+
+    margin-top: 22px !important;
+  }
+
+  /* ==============================
+     ORBITS
+  ============================== */
+
+  .orbit-outer {
+    width: 250px !important;
+    height: 250px !important;
+  }
+
+  .orbit-inner {
+    width: 225px !important;
+    height: 225px !important;
+  }
+
+  /* ==============================
+     FLOATING TECH
+  ============================== */
+
+  .floating-tech {
+    width: 42px !important;
+    height: 42px !important;
+
+    font-size: 13px !important;
+  }
+
+  .floating-code {
+    top: 5% !important;
+    left: 7% !important;
+  }
+
+  .floating-db {
+    right: 5% !important;
+    bottom: 8% !important;
+  }
+
+  /* ==============================
+     BACKGROUND
+  ============================== */
+
+  .tech-globe {
+    opacity: 0.25 !important;
+
+    right: -220px !important;
+  }
+
+  .code-panel {
+    opacity: 0.12 !important;
+
+    left: -280px !important;
+  }
+
+  .tech-label {
+    opacity: 0.45 !important;
+  }
+
+  /* ==============================
+     ARABIC
+  ============================== */
+
+  .portfolio.arabic {
+    direction: rtl !important;
+  }
+
+  .portfolio.arabic .hero {
+    direction: rtl !important;
+  }
+
+  .portfolio.arabic .hero-content {
+    direction: rtl !important;
+
+    text-align: center !important;
+  }
+
+  .portfolio.arabic .hero h1 {
+    width: 100% !important;
+
+    font-size: 2.9rem !important;
+
+    line-height: 1.2 !important;
+
+    letter-spacing: 0 !important;
+
+    text-align: center !important;
+  }
+
+  .portfolio.arabic .hero h1 span {
+    white-space: nowrap !important;
+  }
+
+  .portfolio.arabic .hero h2,
+  .portfolio.arabic .hero-description {
+    text-align: center !important;
+
+    line-height: 1.9 !important;
+  }
+   }
