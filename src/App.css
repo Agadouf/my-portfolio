@@ -1,159 +1,160 @@
+
+  border-style: dashed;
+
+  opacity: 0.65;
+
+  animation:
+    orbitRotate 35s linear infinite reverse;
+}
+
+.orbit-dot {
+  position: absolute;
+
+  z-index: 3;
+
+  width: 11px;
+  height: 11px;
+
+  border-radius: 50%;
+
+  background: #8583ff;
+
   box-shadow:
-    inset 0 0 45px rgba(45, 112, 255, 0.15),
-    0 0 60px rgba(37, 99, 235, 0.12);
-
-  opacity: 0.45;
+    0 0 18px #6965ff;
 }
 
-.globe-longitude {
-  position: absolute;
-
-  inset: 0 25%;
-
-  border: 1px solid rgba(65, 130, 255, 0.55);
-
-  border-radius: 50%;
+.dot-one {
+  top: 17%;
+  right: 23%;
 }
 
-.globe-latitude {
-  position: absolute;
+.dot-two {
+  bottom: 20%;
+  left: 17%;
+}
 
-  inset: 25% 0;
+.dot-three {
+  top: 52%;
+  right: 8%;
 
-  border: 1px solid rgba(65, 130, 255, 0.55);
-
-  border-radius: 50%;
+  width: 8px;
+  height: 8px;
 }
 
 
 /* =========================================================
-   CIRCUITS
+   FLOATING TECH
 ========================================================= */
 
-.circuit {
+.floating-tech {
   position: absolute;
 
-  height: 1px;
+  z-index: 4;
+
+  display: grid;
+
+  place-items: center;
+
+  width: 58px;
+  height: 58px;
+
+  border:
+    1px solid rgba(114, 117, 255, 0.65);
+
+  border-radius: 13px;
 
   background:
-    linear-gradient(
-      90deg,
-      transparent,
-      rgba(69, 100, 255, 0.6),
-      transparent
-    );
+    rgba(13, 17, 40, 0.94);
 
-  transform: rotate(-12deg);
+  color: #9b9aff;
+
+  font-family:
+    "Courier New",
+    monospace;
+
+  font-weight: 700;
+
+  box-shadow:
+    0 0 25px rgba(79, 70, 229, 0.16);
 }
 
-.circuit-one {
-  top: 540px;
-  left: 0;
+.floating-code {
+  top: 9%;
+  left: 8%;
 
-  width: 65%;
+  font-size: 19px;
+
+  animation:
+    floatTech 5s ease-in-out infinite;
 }
 
-.circuit-two {
-  top: 760px;
-  right: 0;
+.floating-db {
+  right: 4%;
+  bottom: 14%;
 
-  width: 70%;
+  font-size: 15px;
 
-  transform: rotate(8deg);
+  animation:
+    floatTech 6s ease-in-out infinite reverse;
 }
 
-
-/* =========================================================
-   BACKGROUND ANIMATIONS
-========================================================= */
-
-@keyframes floatTech {
+@keyframes photoFloat {
   0%,
   100% {
     translate: 0 0;
   }
 
   50% {
-    translate: 0 -12px;
+    translate: 0 -8px;
   }
 }
 
-@keyframes glowPulse {
-  from {
-    opacity: 0.55;
-  }
-
+@keyframes orbitRotate {
   to {
-    opacity: 1;
+    rotate: 360deg;
   }
 }
 
 
 /* =========================================================
-   NAVBAR
+   SECTIONS
 ========================================================= */
 
-.navbar {
+.section {
   width: 100%;
-  max-width: 1250px;
-
-  min-height: 78px;
+  max-width: 1150px;
 
   margin: 0 auto;
 
-  padding: 18px 30px;
+  padding: 100px 35px;
+}
 
+.section-heading {
   display: flex;
 
   align-items: center;
 
-  justify-content: space-between;
+  gap: 15px;
 
-  gap: 25px;
-
-  border-bottom:
-    1px solid rgba(255, 255, 255, 0.055);
-
-  background:
-    rgba(7, 9, 16, 0.38);
-
-  backdrop-filter: blur(12px);
+  margin-bottom: 42px;
 }
 
-.logo {
+.section-heading > span {
   flex-shrink: 0;
 
-  font-size: 1.45rem;
+  color: #7976ff;
 
-  font-weight: 850;
+  font-size: 0.9rem;
 
-  letter-spacing: 1px;
+  font-weight: 800;
 }
 
-.logo span {
-  color: #6965ff;
-}
+.section-heading h2 {
+  color: #f5f5fa;
 
-.nav-links {
-  display: flex;
+  font-size:
+    clamp(2rem, 4vw, 2.7rem);
 
-  align-items: center;
+  line-height: 1.25;
 
-  justify-content: center;
-
-  gap: 27px;
-}
-
-.nav-links a {
-  position: relative;
-
-  padding: 8px 0;
-
-  color: #c5c8d3;
-
-  font-size: 0.91rem;
-
-  white-space: nowrap;
-
-  transition: color 0.25s ease;
-}
+  overflow-wrap: break-word;
