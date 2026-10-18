@@ -1,6 +1,6 @@
-/* =========================================================
-   GLOBAL
-========================================================= */
+/* =========================
+   GLOBAL STYLES
+========================= */
 
 * {
   margin: 0;
@@ -10,7 +10,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 25px;
+  scroll-padding-top: 90px;
   width: 100%;
   max-width: 100%;
 }
@@ -19,18 +19,10 @@ body {
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
-
   background: #070910;
   color: #f5f5f7;
-
-  font-family:
-    Inter,
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    sans-serif;
-
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
   line-height: 1.7;
 }
 
@@ -54,20 +46,25 @@ img {
   max-width: 100%;
 }
 
+button {
+  cursor: pointer;
+}
 
-/* =========================================================
+::selection {
+  background: #6965ff;
+  color: white;
+}
+
+/* =========================
    MAIN PORTFOLIO
-========================================================= */
+========================= */
 
 .portfolio {
   position: relative;
   isolation: isolate;
-
   width: 100%;
   min-height: 100vh;
-
-  overflow-x: hidden;
-
+  overflow: clip;
   background:
     radial-gradient(
       ellipse at 80% 20%,
@@ -90,7 +87,302 @@ img {
   z-index: 2;
 }
 
+.portfolio section {
+  scroll-margin-top: 85px;
+}
 
-/* =========================================================
-   PROGRAMMING BACKGROUND
-========================================================= */
+/* =========================
+   DECORATIVE BACKGROUND
+========================= */
+
+.tech-background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  background-image:
+    linear-gradient(
+      rgba(75, 95, 220, 0.035) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(75, 95, 220, 0.035) 1px,
+      transparent 1px
+    );
+  background-size: 46px 46px;
+}
+
+.background-glow {
+  position: absolute;
+  top: 160px;
+  left: 36%;
+  width: 480px;
+  height: 480px;
+  border-radius: 50%;
+  background: rgba(46, 62, 200, 0.12);
+  filter: blur(110px);
+  animation: glowPulse 7s ease-in-out infinite alternate;
+}
+
+.tech-globe {
+  position: absolute;
+  top: 270px;
+  right: -130px;
+  width: 390px;
+  height: 390px;
+  border: 1px solid rgba(65, 130, 255, 0.4);
+  border-radius: 50%;
+  background:
+    radial-gradient(
+      circle at 35% 35%,
+      rgba(47, 119, 255, 0.15),
+      transparent 60%
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent 0,
+      transparent 25px,
+      rgba(48, 117, 255, 0.1) 26px,
+      transparent 27px
+    );
+  box-shadow:
+    inset 0 0 45px rgba(45, 112, 255, 0.12),
+    0 0 60px rgba(37, 99, 235, 0.1);
+  opacity: 0.35;
+}
+
+.globe-longitude {
+  position: absolute;
+  inset: 0 25%;
+  border: 1px solid rgba(65, 130, 255, 0.4);
+  border-radius: 50%;
+}
+
+.globe-latitude {
+  position: absolute;
+  inset: 25% 0;
+  border: 1px solid rgba(65, 130, 255, 0.4);
+  border-radius: 50%;
+}
+
+.circuit {
+  position: absolute;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(69, 100, 255, 0.5),
+    transparent
+  );
+  transform: rotate(-12deg);
+}
+
+.circuit-one {
+  top: 540px;
+  left: 0;
+  width: 65%;
+}
+
+.circuit-two {
+  top: 760px;
+  right: 0;
+  width: 70%;
+  transform: rotate(8deg);
+}
+
+@keyframes glowPulse {
+  from {
+    opacity: 0.5;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navbar {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  width: 100%;
+  max-width: 1250px;
+  min-height: 78px;
+  margin: 0 auto;
+  padding: 18px 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.055);
+  background: rgba(7, 9, 16, 0.38);
+  backdrop-filter: blur(12px);
+}
+
+.logo {
+  flex-shrink: 0;
+  font-size: 1.45rem;
+  font-weight: 850;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  color: #6965ff;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.nav-links a {
+  position: relative;
+  padding: 8px 0;
+  color: #c5c8d3;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  transition: color 0.25s ease;
+}
+
+.nav-links a::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #6965ff;
+  content: "";
+  transition: width 0.25s ease;
+}
+
+.nav-links a:hover {
+  color: #9293ff;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.language-switch {
+  flex-shrink: 0;
+  min-height: 43px;
+  padding: 9px 17px;
+  border: 1px solid #6965ff;
+  border-radius: 12px;
+  background: rgba(105, 101, 255, 0.08);
+  color: #f5f5f7;
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.language-switch:hover {
+  background: rgba(105, 101, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: 60px;
+  width: 100%;
+  max-width: 1180px;
+  min-height: 680px;
+  margin: 0 auto;
+  padding: 80px 30px 100px;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 670px;
+}
+
+.hero-greeting {
+  margin-bottom: 12px;
+  color: #9293ff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  margin-bottom: 18px;
+  font-size: clamp(2.7rem, 5vw, 4.8rem);
+  font-weight: 850;
+  line-height: 1.13;
+  letter-spacing: -2px;
+  overflow-wrap: anywhere;
+}
+
+.hero h1 span {
+  display: block;
+  color: #8581ff;
+}
+
+.hero h2 {
+  margin-bottom: 22px;
+  color: #d5d7e3;
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  font-weight: 500;
+}
+
+.hero-description {
+  max-width: 580px;
+  margin-bottom: 32px;
+  color: #a8adbf;
+  font-size: 1.05rem;
+  line-height: 1.9;
+}
+
+.hero-buttons,
+.contact-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 50px;
+  padding: 13px 22px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 650;
+  text-align: center;
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.primary-btn {
+  border-color: #6965ff;
+  background: linear-gradient(135deg, #6965ff, #5148d9);
+  color: white;
+  box-shadow: 0 10px 30px rgba(83, 72, 217, 0.18);
+}
+
+.primary-btn:hover {
+  background: linear-gradient(135deg, #807cff
