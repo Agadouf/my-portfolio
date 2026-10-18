@@ -381,6 +381,42 @@ button {
   border-color: #6965ff;
   background: linear-gradient(135deg, #6965ff, #5148d9);
   color: white;
+   /* FIX PROFILE PHOTO */
+.hero-visual .profile-circle {
+  position: relative !important;
+  width: 320px !important;
+  height: 320px !important;
+  aspect-ratio: 1 / 1 !important;
+  overflow: hidden !important;
+  border-radius: 50% !important;
+  isolation: isolate;
+}
+
+.hero-visual .profile-placeholder {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden !important;
+  border-radius: 50% !important;
+}
+
+.hero-visual .profile-placeholder img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  object-fit: cover !important;
+  object-position: center 25% !important;
+  border-radius: 50% !important;
+}
+
+@media (max-width: 700px) {
+  .hero-visual .profile-circle {
+    width: min(70vw, 290px) !important;
+    height: min(70vw, 290px) !important;
+  }
+}
   box-shadow: 0 10px 30px rgba(83, 72, 217, 0.18);
 }
 
