@@ -422,3 +422,26 @@ button {
 
 .primary-btn:hover {
   background: linear-gradient(135deg, #807cff
+/* FORCE THE PROFILE PHOTO TO BE CIRCULAR */
+.hero-visual .profile-circle .profile-placeholder {
+  width: 320px !important;
+  height: 320px !important;
+  overflow: hidden !important;
+  border-radius: 50% !important;
+}
+
+.hero-visual .profile-circle .profile-placeholder img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center 25% !important;
+  clip-path: circle(50% at 50% 50%) !important;
+}
+
+@media (max-width: 700px) {
+  .hero-visual .profile-circle .profile-placeholder {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
