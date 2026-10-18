@@ -302,15 +302,24 @@ function App() {
           <div className="profile-orbit orbit-outer" />
           <div className="profile-orbit orbit-inner" />
 
-          <div className="profile-circle">
-            <div className="profile-placeholder">
-              <img
-                src={profileImage}
-                alt="Abdalrahim Agadouf"
-                fetchPriority="high"
-              />
-            </div>
-          </div>
+        <div className="profile-circle">
+  <div className="profile-placeholder">
+    <img
+      src={profileImage}
+      alt="Abdalrahim Agadouf"
+      fetchPriority="high"
+      style={{
+        display: "block",
+        width: "100%",
+        height: "100%",
+        objectFit: "cover",
+        objectPosition: "center 25%",
+        borderRadius: "50%",
+        clipPath: "circle(50% at 50% 50%)",
+      }}
+    />
+  </div>
+</div>
 
           <div className="orbit-dot dot-one" />
           <div className="orbit-dot dot-two" />
