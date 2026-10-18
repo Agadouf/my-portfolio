@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import "./App.css";
 import profileImage from "./assets/profile.jpg";
@@ -13,30 +14,19 @@ const content = {
       "CV",
       "Contact",
     ],
-
     greeting: "Hello, I'm",
-
     role: "Informatics Engineering Student & Web Developer",
-
     description:
       "I build modern, responsive web applications and enjoy turning ideas into practical digital solutions.",
-
     viewProjects: "View My Projects",
-
     contactMe: "Contact Me",
-
     aboutTitle: "About Me",
-
     about: [
       "I am an Informatics Engineering student at Universitas Muhammadiyah Purwokerto, currently focused on developing my skills in web development and software engineering.",
-
       "I enjoy building practical applications and learning by working on real projects. My experience includes frontend development, backend development, databases, and full-stack web applications.",
-
       "I am always looking to improve my technical skills, learn new technologies, and turn ideas into useful digital solutions.",
     ],
-
     skillsTitle: "Technical Skills",
-
     skills: [
       {
         title: "Frontend Development",
@@ -55,9 +45,7 @@ const content = {
         text: "Git · GitHub · VS Code · Vite",
       },
     ],
-
     projectsTitle: "Featured Projects",
-
     projects: [
       {
         title: "English Learning Platform",
@@ -67,7 +55,6 @@ const content = {
         github: "https://github.com/Agadouf/guru-siap-ngajar",
         demo: "https://guru-siap-ngajar-front.vercel.app/",
       },
-
       {
         title: "Quran Website",
         description:
@@ -76,7 +63,6 @@ const content = {
         github: "https://github.com/Agadouf/quran_app",
         demo: "https://quran-app-alzain.vercel.app/",
       },
-
       {
         title: "Agadouf Shop",
         description:
@@ -85,7 +71,6 @@ const content = {
         github: "https://github.com/Agadouf/Agadouf-Shop",
         demo: "https://iphone-shop.infinityfreeapp.com",
       },
-
       {
         title: "Alawlama Training Center",
         description:
@@ -96,36 +81,22 @@ const content = {
         demo: "https://alawlama.ifree.page/login.php",
       },
     ],
-
     github: "GitHub",
-
     liveDemo: "Live Demo",
-
     educationTitle: "Education",
-
     university: "Universitas Muhammadiyah Purwokerto",
-
     major: "Informatics Engineering",
-
     educationDescription:
       "Currently pursuing a degree in Informatics Engineering, developing practical skills in programming, web development, databases, and software engineering.",
-
     cvTitle: "My CV",
-
     cvDescription:
       "Download my CV to learn more about my education, skills, projects, and experience.",
-
     downloadCv: "Download CV",
-
     contactTitle: "Let's build something together.",
-
     contactDescription:
       "I'm open to internships, collaborations, freelance opportunities, and interesting web development projects.",
-
     emailMe: "Email Me",
-
     footer: "All rights reserved.",
-
     languageButton: "العربية",
   },
 
@@ -139,54 +110,38 @@ const content = {
       "السيرة الذاتية",
       "تواصل",
     ],
-
     greeting: "مرحباً، أنا",
-
     role: "طالب هندسة معلوماتية ومطور ويب",
-
     description:
       "أطوّر تطبيقات ويب عصرية ومتجاوبة، وأستمتع بتحويل الأفكار إلى حلول رقمية عملية.",
-
     viewProjects: "شاهد مشاريعي",
-
     contactMe: "تواصل معي",
-
     aboutTitle: "من أنا",
-
     about: [
       "أنا طالب هندسة معلوماتية في جامعة المحمدية بورواكرتو، وأركز حالياً على تطوير مهاراتي في برمجة الويب وهندسة البرمجيات.",
-
       "أحب بناء التطبيقات العملية والتعلم من خلال المشاريع الحقيقية. تشمل خبرتي تطوير الواجهات الأمامية والخلفية وقواعد البيانات وتطبيقات الويب المتكاملة.",
-
       "أسعى دائماً إلى تطوير مهاراتي التقنية وتعلّم تقنيات جديدة وتحويل الأفكار إلى حلول رقمية مفيدة.",
     ],
-
     skillsTitle: "المهارات التقنية",
-
     skills: [
       {
         title: "تطوير الواجهات",
         text: "HTML · CSS · JavaScript · React",
       },
-
       {
         title: "تطوير الخلفية",
         text: "PHP · Node.js · REST APIs",
       },
-
       {
         title: "قواعد البيانات",
         text: "MySQL · PostgreSQL · Prisma",
       },
-
       {
         title: "أدوات التطوير",
         text: "Git · GitHub · VS Code · Vite",
       },
     ],
-
     projectsTitle: "أبرز المشاريع",
-
     projects: [
       {
         title: "منصة تعلّم الإنجليزية",
@@ -196,7 +151,6 @@ const content = {
         github: "https://github.com/Agadouf/guru-siap-ngajar",
         demo: "https://guru-siap-ngajar-front.vercel.app/",
       },
-
       {
         title: "موقع القرآن الكريم",
         description:
@@ -205,7 +159,6 @@ const content = {
         github: "https://github.com/Agadouf/quran_app",
         demo: "https://quran-app-alzain.vercel.app/",
       },
-
       {
         title: "متجر أغادوف",
         description:
@@ -214,7 +167,6 @@ const content = {
         github: "https://github.com/Agadouf/Agadouf-Shop",
         demo: "https://iphone-shop.infinityfreeapp.com",
       },
-
       {
         title: "نظام إدارة مركز العولمة",
         description:
@@ -225,36 +177,22 @@ const content = {
         demo: "https://alawlama.ifree.page/login.php",
       },
     ],
-
     github: "GitHub",
-
     liveDemo: "عرض الموقع",
-
     educationTitle: "التعليم",
-
     university: "جامعة المحمدية بورواكرتو",
-
     major: "هندسة المعلوماتية",
-
     educationDescription:
       "أدرس هندسة المعلوماتية وأطوّر مهارات عملية في البرمجة وتطوير الويب وقواعد البيانات وهندسة البرمجيات.",
-
     cvTitle: "السيرة الذاتية",
-
     cvDescription:
       "قم بتحميل سيرتي الذاتية للتعرف أكثر على تعليمي ومهاراتي ومشاريعي وخبراتي.",
-
     downloadCv: "تحميل السيرة الذاتية",
-
     contactTitle: "لنبنِ شيئاً مميزاً معاً.",
-
     contactDescription:
       "أنا مهتم بفرص التدريب والتعاون والعمل الحر ومشاريع تطوير الويب.",
-
     emailMe: "راسلني",
-
     footer: "جميع الحقوق محفوظة.",
-
     languageButton: "English",
   },
 };
@@ -273,7 +211,6 @@ function App() {
   const [language, setLanguage] = useState("en");
 
   const t = content[language];
-
   const isArabic = language === "ar";
 
   return (
@@ -282,31 +219,9 @@ function App() {
       dir={isArabic ? "rtl" : "ltr"}
       lang={language}
     >
-      {/* Technical background */}
+      {/* Technical background — code panel removed */}
 
       <div className="tech-background" aria-hidden="true">
-        <div className="code-panel">
-          <div className="code-dots">
-            <span />
-            <span />
-            <span />
-          </div>
-
-          <pre>{`import React from "react";
-
-function Portfolio() {
-  const skills = [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "React",
-    "PHP",
-  ];
-
-  return <Developer />;
-}`}</pre>
-        </div>
-
         <div className="tech-label tech-label-one">
           {"</>"}
         </div>
@@ -333,9 +248,7 @@ function Portfolio() {
         </div>
 
         <div className="circuit circuit-one" />
-
         <div className="circuit circuit-two" />
-
         <div className="background-glow" />
       </div>
 
@@ -397,9 +310,7 @@ function Portfolio() {
               className="btn primary-btn"
             >
               {t.viewProjects}
-              <span aria-hidden="true">
-                {" ↗"}
-              </span>
+              <span aria-hidden="true"> ↗</span>
             </a>
 
             <a
@@ -435,7 +346,6 @@ function Portfolio() {
 
         <div className="hero-visual">
           <div className="profile-orbit orbit-outer" />
-
           <div className="profile-orbit orbit-inner" />
 
           <div className="profile-circle">
@@ -449,9 +359,7 @@ function Portfolio() {
           </div>
 
           <div className="orbit-dot dot-one" />
-
           <div className="orbit-dot dot-two" />
-
           <div className="orbit-dot dot-three" />
 
           <div className="floating-tech floating-code">
@@ -469,15 +377,12 @@ function Portfolio() {
       <section id="about" className="section">
         <div className="section-heading">
           <span>01</span>
-
           <h2>{t.aboutTitle}</h2>
         </div>
 
         <div className="about-content">
           {t.about.map((paragraph, index) => (
-            <p key={index}>
-              {paragraph}
-            </p>
+            <p key={index}>{paragraph}</p>
           ))}
         </div>
       </section>
@@ -487,7 +392,6 @@ function Portfolio() {
       <section id="skills" className="section">
         <div className="section-heading">
           <span>02</span>
-
           <h2>{t.skillsTitle}</h2>
         </div>
 
@@ -502,7 +406,6 @@ function Portfolio() {
               </span>
 
               <h3>{skill.title}</h3>
-
               <p>{skill.text}</p>
             </article>
           ))}
@@ -514,7 +417,6 @@ function Portfolio() {
       <section id="projects" className="section">
         <div className="section-heading">
           <span>03</span>
-
           <h2>{t.projectsTitle}</h2>
         </div>
 
@@ -538,7 +440,6 @@ function Portfolio() {
               </div>
 
               <h3>{project.title}</h3>
-
               <p>{project.description}</p>
 
               <div className="project-tech">
@@ -569,13 +470,9 @@ function Portfolio() {
 
       {/* Education */}
 
-      <section
-        id="education"
-        className="section"
-      >
+      <section id="education" className="section">
         <div className="section-heading">
           <span>04</span>
-
           <h2>{t.educationTitle}</h2>
         </div>
 
@@ -590,9 +487,7 @@ function Portfolio() {
             </span>
 
             <h3>{t.university}</h3>
-
             <h4>{t.major}</h4>
-
             <p>{t.educationDescription}</p>
           </div>
         </article>
@@ -600,42 +495,34 @@ function Portfolio() {
 
       {/* CV */}
 
-      <section
-        id="cv"
-        className="section cv-section"
-      >
+      <section id="cv" className="section cv-section">
         <div className="section-heading">
           <span>05</span>
-
           <h2>{t.cvTitle}</h2>
         </div>
 
         <div className="cv-content">
           <p>{t.cvDescription}</p>
 
-       <a
-  href="/bdalrahim_Agadouf_CV.pdf.pdf"
-  download="Abdalrahim Agadouf_CV.pdf"
-  className="btn primary-btn cv-download-btn"
->
-  <span aria-hidden="true">📥</span>
-  {t.downloadCv}
-</a>
+          <a
+            href="/bdalrahim_Agadouf_CV.pdf.pdf"
+            download="Abdalrahim Agadouf_CV.pdf"
+            className="btn primary-btn cv-download-btn"
+          >
+            <span aria-hidden="true">📥</span>
+            {t.downloadCv}
+          </a>
         </div>
       </section>
 
       {/* Contact */}
 
-      <section
-        id="contact"
-        className="contact-section"
-      >
+      <section id="contact" className="contact-section">
         <p className="contact-label">
           06 — {t.nav[6]}
         </p>
 
         <h2>{t.contactTitle}</h2>
-
         <p>{t.contactDescription}</p>
 
         <div className="contact-buttons">
@@ -670,8 +557,7 @@ function Portfolio() {
 
       <footer>
         <p>
-          © 2026 Abdalrahim Agadouf.{" "}
-          {t.footer}
+          © 2026 Abdalrahim Agadouf. {t.footer}
         </p>
       </footer>
     </div>
