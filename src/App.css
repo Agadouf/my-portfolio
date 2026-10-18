@@ -388,14 +388,14 @@ button {
   place-items: center;
   width: 100%;
   min-width: 0;
-  min-height: 410px;
+  min-height: 260px;
   isolation: isolate;
 }
 
 .profile-circle {
   position: relative;
   z-index: 2;
-  width: min(100%, 320px);
+  width: min(100%, 260px);
   aspect-ratio: 1 / 1;
   overflow: hidden;
   border: 3px solid rgba(130, 126, 255, 0.85);
