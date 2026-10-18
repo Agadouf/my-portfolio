@@ -613,17 +613,14 @@ function Portfolio() {
         <div className="cv-content">
           <p>{t.cvDescription}</p>
 
-          <a
-            href="/bdalrahim_Agadouf_CV.pdf.pdf"
-            download="bdalrahim_Agadouf_CV.pdf.pdf"
-            className="btn primary-btn cv-download-btn"
-          >
-            <span aria-hidden="true">
-              📥
-            </span>
-
-            {t.downloadCv}
-          </a>
+       <a
+  href="/bdalrahim_Agadouf_CV.pdf.pdf"
+  download="Abdalrahim Agadouf_CV.pdf"
+  className="btn primary-btn cv-download-btn"
+>
+  <span aria-hidden="true">📥</span>
+  {t.downloadCv}
+</a>
         </div>
       </section>
 
