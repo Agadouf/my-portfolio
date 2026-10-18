@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import "./App.css";
 import profileImage from "./assets/profile.jpg";
@@ -209,7 +208,6 @@ const navIds = [
 
 function App() {
   const [language, setLanguage] = useState("en");
-
   const t = content[language];
   const isArabic = language === "ar";
 
@@ -219,55 +217,26 @@ function App() {
       dir={isArabic ? "rtl" : "ltr"}
       lang={language}
     >
-      {/* Technical background — code panel removed */}
-
+      {/* Decorative background */}
       <div className="tech-background" aria-hidden="true">
-        <div className="tech-label tech-label-one">
-          {"</>"}
-        </div>
-
-        <div className="tech-label tech-label-two">
-          AI
-        </div>
-
-        <div className="tech-label tech-label-three">
-          {"{ }"}
-        </div>
-
-        <div className="tech-stack">
-          <span>React</span>
-          <span>Node.js</span>
-          <span>JavaScript</span>
-          <span>MySQL</span>
-          <span>Web Development</span>
-        </div>
-
         <div className="tech-globe">
           <div className="globe-longitude" />
           <div className="globe-latitude" />
         </div>
-
         <div className="circuit circuit-one" />
         <div className="circuit circuit-two" />
         <div className="background-glow" />
       </div>
 
       {/* Navigation */}
-
       <header className="navbar">
         <a href="#home" className="logo">
           AGADOUF<span>.</span>
         </a>
 
-        <nav
-          className="nav-links"
-          aria-label="Main navigation"
-        >
+        <nav className="nav-links" aria-label="Main navigation">
           {t.nav.map((label, index) => (
-            <a
-              href={`#${navIds[index]}`}
-              key={navIds[index]}
-            >
+            <a href={`#${navIds[index]}`} key={navIds[index]}>
               {label}
             </a>
           ))}
@@ -276,9 +245,7 @@ function App() {
         <button
           type="button"
           className="language-switch"
-          onClick={() =>
-            setLanguage(isArabic ? "en" : "ar")
-          }
+          onClick={() => setLanguage(isArabic ? "en" : "ar")}
           aria-label="Switch website language"
         >
           {t.languageButton}
@@ -286,12 +253,9 @@ function App() {
       </header>
 
       {/* Hero */}
-
       <main id="home" className="hero">
         <div className="hero-content">
-          <p className="hero-greeting">
-            {t.greeting}
-          </p>
+          <p className="hero-greeting">{t.greeting}</p>
 
           <h1>
             Abdalrahim
@@ -300,23 +264,15 @@ function App() {
 
           <h2>{t.role}</h2>
 
-          <p className="hero-description">
-            {t.description}
-          </p>
+          <p className="hero-description">{t.description}</p>
 
           <div className="hero-buttons">
-            <a
-              href="#projects"
-              className="btn primary-btn"
-            >
+            <a href="#projects" className="btn primary-btn">
               {t.viewProjects}
               <span aria-hidden="true"> ↗</span>
             </a>
 
-            <a
-              href="#contact"
-              className="btn secondary-btn"
-            >
+            <a href="#contact" className="btn secondary-btn">
               {t.contactMe}
             </a>
           </div>
@@ -330,9 +286,7 @@ function App() {
               GitHub ↗
             </a>
 
-            <a href="mailto:aagadouf@gmail.com">
-              Email ↗
-            </a>
+            <a href="mailto:aagadouf@gmail.com">Email ↗</a>
 
             <a
               href="https://wa.me/249999179949"
@@ -362,18 +316,12 @@ function App() {
           <div className="orbit-dot dot-two" />
           <div className="orbit-dot dot-three" />
 
-          <div className="floating-tech floating-code">
-            {"< />"}
-          </div>
-
-          <div className="floating-tech floating-db">
-            DB
-          </div>
+          <div className="floating-tech floating-code">{"< />"}</div>
+          <div className="floating-tech floating-db">DB</div>
         </div>
       </main>
 
       {/* About */}
-
       <section id="about" className="section">
         <div className="section-heading">
           <span>01</span>
@@ -388,7 +336,6 @@ function App() {
       </section>
 
       {/* Skills */}
-
       <section id="skills" className="section">
         <div className="section-heading">
           <span>02</span>
@@ -397,14 +344,8 @@ function App() {
 
         <div className="skills-grid">
           {t.skills.map((skill, index) => (
-            <article
-              className="skill-card"
-              key={skill.title}
-            >
-              <span className="skill-index">
-                0{index + 1}
-              </span>
-
+            <article className="skill-card" key={skill.title}>
+              <span className="skill-index">0{index + 1}</span>
               <h3>{skill.title}</h3>
               <p>{skill.text}</p>
             </article>
@@ -413,7 +354,6 @@ function App() {
       </section>
 
       {/* Projects */}
-
       <section id="projects" className="section">
         <div className="section-heading">
           <span>03</span>
@@ -422,19 +362,13 @@ function App() {
 
         <div className="projects-grid">
           {t.projects.map((project, index) => (
-            <article
-              className="project-card"
-              key={project.title}
-            >
+            <article className="project-card" key={project.title}>
               <div className="project-topline">
                 <span className="project-number">
                   {String(index + 1).padStart(2, "0")}
                 </span>
 
-                <span
-                  className="project-symbol"
-                  aria-hidden="true"
-                >
+                <span className="project-symbol" aria-hidden="true">
                   {"</>"}
                 </span>
               </div>
@@ -442,9 +376,7 @@ function App() {
               <h3>{project.title}</h3>
               <p>{project.description}</p>
 
-              <div className="project-tech">
-                {project.tech}
-              </div>
+              <div className="project-tech">{project.tech}</div>
 
               <div className="project-links">
                 <a
@@ -469,7 +401,6 @@ function App() {
       </section>
 
       {/* Education */}
-
       <section id="education" className="section">
         <div className="section-heading">
           <span>04</span>
@@ -477,15 +408,10 @@ function App() {
         </div>
 
         <article className="education-card">
-          <div className="education-year">
-            2024 — Present
-          </div>
+          <div className="education-year">2024 — Present</div>
 
           <div className="education-info">
-            <span className="education-tag">
-              UNIVERSITY
-            </span>
-
+            <span className="education-tag">UNIVERSITY</span>
             <h3>{t.university}</h3>
             <h4>{t.major}</h4>
             <p>{t.educationDescription}</p>
@@ -494,7 +420,6 @@ function App() {
       </section>
 
       {/* CV */}
-
       <section id="cv" className="section cv-section">
         <div className="section-heading">
           <span>05</span>
@@ -516,20 +441,14 @@ function App() {
       </section>
 
       {/* Contact */}
-
       <section id="contact" className="contact-section">
-        <p className="contact-label">
-          06 — {t.nav[6]}
-        </p>
+        <p className="contact-label">06 — {t.nav[6]}</p>
 
         <h2>{t.contactTitle}</h2>
         <p>{t.contactDescription}</p>
 
         <div className="contact-buttons">
-          <a
-            href="mailto:aagadouf@gmail.com"
-            className="btn primary-btn"
-          >
+          <a href="mailto:aagadouf@gmail.com" className="btn primary-btn">
             {t.emailMe} ↗
           </a>
 
@@ -554,7 +473,6 @@ function App() {
       </section>
 
       {/* Footer */}
-
       <footer>
         <p>
           © 2026 Abdalrahim Agadouf. {t.footer}
