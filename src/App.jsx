@@ -614,8 +614,8 @@ function Portfolio() {
           <p>{t.cvDescription}</p>
 
           <a
-            href="/Abdalrahim%20Agadouf_CV.pdf"
-            download="Abdalrahim Agadouf_CV.pdf"
+            href="/bdalrahim_Agadouf_CV.pdf.pdf"
+            download="bdalrahim_Agadouf_CV.pdf.pdf"
             className="btn primary-btn cv-download-btn"
           >
             <span aria-hidden="true">
